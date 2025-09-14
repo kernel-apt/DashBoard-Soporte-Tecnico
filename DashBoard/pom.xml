@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>dashboard</groupId>
+    <artifactId>dashboard</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>dashboard</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>26</maven.compiler.target>
+        <javafx.version>25-ea+21</javafx.version>
+        <mainClassName>dashboard.DashBoard</mainClassName>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.kordamp.ikonli</groupId>
+            <artifactId>ikonli-javafx</artifactId>
+            <version>12.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.dlsc.workbenchfx</groupId>
+            <artifactId>workbenchfx-core</artifactId>
+            <version>11.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.typhon0</groupId>
+            <artifactId>AnimateFX</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>11.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>9.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>25-ea+21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>25-ea+21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>25-ea+21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>25-ea+21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-web</artifactId>
+            <version>25-ea+21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gluonhq.attach</groupId>
+            <artifactId>util</artifactId>
+            <version>4.0.22</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kordamp.bootstrapfx</groupId>
+            <artifactId>bootstrapfx-core</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.palexdev</groupId>
+            <artifactId>materialfx</artifactId>
+            <version>11.17.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gluonhq</groupId>
+            <artifactId>charm-glisten</artifactId>
+            <version>6.2.3</version>
+        </dependency>
+
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>gluon-releases</id>
+            <url>https://nexus.gluonhq.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.14.0</version>
+                <configuration>
+                    <release>25-ea+21</release>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>${mainClassName}</mainClass>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.gluonhq</groupId>
+                <artifactId>gluonfx-maven-plugin</artifactId>
+                <version>1.0.26</version>
+                <configuration>
+                    <!-- Uncomment to run on iOS: -->
+                    <!-- <target>ios</target>-->
+                    <mainClass>${mainClassName}</mainClass>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>gluon-releases</id>
+            <url>https://nexus.gluonhq.com/nexus/content/repositories/releases/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
