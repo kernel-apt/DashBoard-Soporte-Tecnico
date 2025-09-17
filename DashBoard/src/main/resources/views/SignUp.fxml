@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.soporte.AccesoController">
+   <children>
+      <Pane prefHeight="552.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <HBox layoutY="-1.0" prefHeight="87.0" prefWidth="600.0" stylesheets="@../../../css/newCascadeStyleSheet.css">
+               <children>
+                  <Label id="lblTitulo" fx:id="lblTitulo" cache="true" prefHeight="89.0" prefWidth="600.0" style="-fx-background-color: grey;" stylesheets="@../../../css/newCascadeStyleSheet.css" text="         Bienvenido!" textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font name="Arial Black" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label contentDisplay="TOP" layoutX="216.0" layoutY="130.0" text="Usuario:" textFill="#f5f3f3" textOverrun="CLIP">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsuario" layoutX="156.0" layoutY="179.0" prefHeight="37.0" prefWidth="271.0" promptText="escribe tu usuario">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </TextField>
+            <Label contentDisplay="TOP" layoutX="226.0" layoutY="271.0" text="PassKey:" textFill="#f5f3f3" textOverrun="CLIP">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtClave" layoutX="156.0" layoutY="328.0" prefHeight="37.0" prefWidth="271.0" promptText="ingresa tu clave">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnSesion" layoutX="212.0" layoutY="420.0" mnemonicParsing="false" text="Iniciar Sesión">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img" fitHeight="97.0" fitWidth="136.0" layoutX="474.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagen/Imagen%20de%20WhatsApp%202025-09-14%20a%20las%2023.29.00_40c35859.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
