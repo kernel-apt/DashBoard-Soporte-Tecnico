@@ -28,10 +28,14 @@ public class DashBoard extends Application
      * @param fxml nombre de la vista
      * @param title titulo de la ventana
      * @param width ancho de la ventana
-     * @param heigh alto de la ventana
+     * @param height alto de la ventana
      */
-    public static void setRoot(String fxml, String title, double width, double heigh) throws IOException 
+    public static void setRoot(String fxml, String title, double width, double height) throws IOException 
     {
+        ((Stage) scene.getWindow()).setTitle(title);
+        scene.getWindow().setWidth(width);
+        scene.getWindow().setHeight(height);
+        scene.getWindow().centerOnScreen();
         scene.setRoot(loadFXML(fxml));
     }
     
@@ -43,6 +47,7 @@ public class DashBoard extends Application
      */
     public static void setRoot(String fxml, String title) throws IOException 
     {
+        ((Stage) scene.getWindow()).setTitle(title);
         scene.setRoot(loadFXML(fxml));
     }
     
