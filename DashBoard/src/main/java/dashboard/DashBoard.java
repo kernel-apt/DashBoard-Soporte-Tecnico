@@ -7,7 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class DashBoard extends Application 
+public class DashBoard extends Application
 {
     private static Scene scene;
 
@@ -22,16 +22,35 @@ public class DashBoard extends Application
         stage.show();
     }
 
+    /**
+     * cambia la escena actual por la que se le pase por parametro
+     * @throws IOException regresa una excepcion si no halla la vista
+     * @param fxml nombre de la vista
+     * @param title titulo de la ventana
+     * @param width ancho de la ventana
+     * @param heigh alto de la ventana
+     */
     public static void setRoot(String fxml, String title, double width, double heigh) throws IOException 
     {
         scene.setRoot(loadFXML(fxml));
     }
     
+    /**
+     * cambia la escena actual por la que se le pase por parametro
+     * @throws IOException regresa una excepcion si no halla la vista
+     * @param fxml nombre de la vista
+     * @param title titulo de la ventana
+     */
     public static void setRoot(String fxml, String title) throws IOException 
     {
         scene.setRoot(loadFXML(fxml));
     }
-
+    
+    /**
+     * cambia la escena actual por la que se le pase por parametro
+     * @throws IOException regresa una excepcion si no halla la vista
+     * @param fxml nombre de la vista
+     */
     public static void setRoot(String fxml) throws IOException 
     {
         scene.setRoot(loadFXML(fxml));
