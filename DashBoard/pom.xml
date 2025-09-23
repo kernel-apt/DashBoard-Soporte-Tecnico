@@ -137,8 +137,6 @@
                 <artifactId>gluonfx-maven-plugin</artifactId>
                 <version>1.0.26</version>
                 <configuration>
-                    <!-- Uncomment to run on iOS: -->
-                    <!-- <target>ios</target>-->
                     <mainClass>${mainClassName}</mainClass>
                 </configuration>
             </plugin>
