@@ -1,0 +1,12 @@
+{
+     "configurations": 
+     [
+          {
+               "type": "java",
+               "name": "Dashboard",
+               "request": "launch",
+               "mainClass": "dashboard/dashboard.Dashboard",
+               "vmArgs": "--enable-native-access=javafx.graphics"
+          }
+     ]
+}
