@@ -1,4 +1,6 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>60</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>60</y><w>210</w><h>190</h></coordinates><panel_attributes>fontsize=16
+font
+&lt;&lt;Stereotype&gt;&gt;
 Package::FatClass
 {Some Properties}
 --
@@ -10,4 +12,5 @@ _-ClassAttribute: Long_
 --
 Responsibilities
 -- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+*-- Resp2*
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
