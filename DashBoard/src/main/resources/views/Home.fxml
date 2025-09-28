@@ -10,47 +10,47 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Home">
+<AnchorPane fx:id="anchorp_home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.soporte.HomeController">
    <children>
-      <Pane layoutX="-4.0" prefHeight="522.0" prefWidth="740.0">
+      <Pane fx:id="pan_buscar" layoutX="-4.0" prefHeight="522.0" prefWidth="740.0">
          <children>
-            <ToggleButton layoutX="348.0" layoutY="15.0" mnemonicParsing="false" />
-            <Label layoutX="399.0" layoutY="5.0" prefHeight="44.0" prefWidth="335.0" style="-fx-background-color: grey;" text="  Manuel Cruz Sanchez  || Soporte Tecnico" textFill="WHITE">
+            <ToggleButton fx:id="togle_mode" layoutX="348.0" layoutY="15.0" mnemonicParsing="false" />
+            <Label fx:id="lbl_nombre_tec" layoutX="399.0" layoutY="5.0" prefHeight="44.0" prefWidth="335.0" style="-fx-background-color: grey;" text="  Manuel Cruz Sanchez  || Soporte Tecnico" textFill="WHITE">
                <font>
                   <Font name="Arial Black" size="12.0" />
                </font>
             </Label>
-            <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="698.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../imagen/1580148527931.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="264.0" layoutY="19.0" text="Dark Mode">
+            <Label fx:id="lbl_dark" layoutX="264.0" layoutY="19.0" text="Dark Mode">
                <font>
                   <Font name="Arial Black" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="67.0" layoutY="19.0" text="Dash Board">
+            <Label fx:id="lbl_dash" layoutX="67.0" layoutY="19.0" text="Dash Board">
                <font>
                   <Font name="Arial Black" size="12.0" />
                </font>
             </Label>
-            <ImageView fitHeight="33.0" fitWidth="44.0" layoutX="153.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../imagen/Captura%20de%20pantalla%202025-09-15%20020104.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="183.0" fitWidth="290.0" layoutX="226.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../imagen/Captura%20de%20pantalla%202025-09-15%20020456.png" />
-               </image>
-            </ImageView>
-            <Button layoutX="425.0" layoutY="341.0" mnemonicParsing="false" text="Buscar">
+            <Button fx:id="btn_buscar" layoutX="425.0" layoutY="341.0" mnemonicParsing="false" text="Buscar">
                <font>
                   <Font name="Arial Black" size="14.0" />
                </font>
             </Button>
-            <TextField layoutX="225.0" layoutY="341.0" prefHeight="32.0" prefWidth="198.0" promptText="Ingresa la cuenta del cliente " />
+            <TextField fx:id="txt_cliente" layoutX="225.0" layoutY="341.0" prefHeight="32.0" prefWidth="198.0" promptText="Ingresa la cuenta del cliente " />
+            <ImageView fx:id="img_dash_board" fitHeight="141.0" fitWidth="218.0" layoutX="248.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagen/dashboard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_dash" fitHeight="44.0" fitWidth="48.0" layoutX="152.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagen/audifonos.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_soprote" fitHeight="44.0" fitWidth="38.0" layoutX="689.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagen/asistente.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

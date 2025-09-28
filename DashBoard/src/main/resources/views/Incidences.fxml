@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="anchorp_incidencias" prefHeight="576.0" prefWidth="676.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.mycompany.soporte.IncidencesController">
+   <children>
+      <Pane fx:id="pan_incidencias" layoutY="-1.0" prefHeight="585.0" prefWidth="676.0" style="-fx-background-color: E75480;">
+         <children>
+            <Label layoutX="-3.0" layoutY="-3.0" prefHeight="34.0" prefWidth="683.0" style="-fx-background-color: black;" />
+            <Label fx:id="lbl_soporte" layoutX="187.0" layoutY="1.0" prefHeight="27.0" prefWidth="292.0" style="-fx-background-color: white;" text=" Incidencias Soporte Tecnico">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="183.0" layoutY="31.0" prefHeight="34.0" prefWidth="298.0" style="-fx-background-color: grey;" />
+            <Button fx:id="btn_busqueda" layoutX="193.0" layoutY="35.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="278.0" style="-fx-background-color: white;" text="Busqueda">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="table_visitas" accessibleRole="IMAGE_VIEW" editable="true" fixedCellSize="0.0" layoutX="-5.0" layoutY="76.0" prefHeight="110.0" prefWidth="683.0" style="-fx-background-color: white;">
+              <columns>
+                <TableColumn prefWidth="682.0" style="-fx-background-color: #00aae4;" text="Visitas Tecnicas" />
+              </columns>
+            </TableView>
+            <ImageView fx:id="img_lupa" fitHeight="26.0" fitWidth="35.0" layoutX="271.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagen/lupa.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table_telefonia" accessibleRole="IMAGE_VIEW" editable="true" fixedCellSize="0.0" layoutX="-9.0" layoutY="455.0" prefHeight="110.0" prefWidth="683.0" style="-fx-background-color: white;">
+               <columns>
+                  <TableColumn prefWidth="682.0" style="-fx-background-color: #89F336;" text="Telefonia" />
+               </columns>
+            </TableView>
+            <TableView fx:id="table_internet" accessibleRole="IMAGE_VIEW" editable="true" fixedCellSize="0.0" layoutX="-9.0" layoutY="326.0" prefHeight="110.0" prefWidth="683.0" style="-fx-background-color: white;">
+               <columns>
+                  <TableColumn prefWidth="682.0" style="-fx-background-color: yellow;" text="Internet" />
+               </columns>
+            </TableView>
+            <TableView fx:id="table_television" accessibleRole="IMAGE_VIEW" editable="true" fixedCellSize="0.0" layoutX="-9.0" layoutY="202.0" prefHeight="110.0" prefWidth="683.0" style="-fx-background-color: white;">
+               <columns>
+                  <TableColumn prefWidth="682.0" style="-fx-background-color: orange;" text="Television" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
