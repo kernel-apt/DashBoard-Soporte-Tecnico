@@ -9,7 +9,7 @@ import java.sql.ResultSet;
  * Clase padre de los Dao
  * @author Cruz Sanchez Manuel
  */
-public class Dao
+public abstract class Dao
 {
      protected Connection linkToDataBase;
      protected ResultSet resultSet;

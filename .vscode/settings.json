@@ -3,5 +3,6 @@
      "java.compile.nullAnalysis.mode": "automatic",
      "umlet.fontBold": "Comic Sans MS",
      "umlet.fontItalic": "Comic Sans MS",
-     "umlet.fontNormal": ""
+     "umlet.fontNormal": "",
+     "java.debug.settings.onBuildFailureProceed": true
 }
