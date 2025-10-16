@@ -6,6 +6,20 @@
                "type": "java",
                "name": "DashBoard",
                "request": "launch",
+               "mainClass": "dashboard/dashboard.DashBoard",
+               "projectName": "dashboard"
+          },
+          {
+               "type": "java",
+               "name": "Main",
+               "request": "launch",
+               "mainClass": "dashboard/dashboard.Main",
+               "projectName": "dashboard"
+          },
+          {
+               "type": "java",
+               "name": "DashBoard",
+               "request": "launch",
                "mainClass": "dashboard.DashBoard",
                "projectName": "dashboard",
                "cwd": "${workspaceFolder}/DashBoard",

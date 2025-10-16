@@ -14,7 +14,7 @@ public class DashBoard extends Application
     @Override
     public void start(Stage stage) throws IOException 
     {
-        scene = new Scene(loadFXML("Home"), 500, 450);
+        scene = new Scene(loadFXML("SignUp"), 500, 450);
         stage.setTitle("Iniciar Sesion");
         stage.setResizable(true);
         stage.centerOnScreen();

@@ -9,7 +9,7 @@ import java.sql.ResultSet;
  * Clase padre de los Dao
  * @author Cruz Sanchez Manuel
  */
-public abstract class Dao
+public abstract class DAO
 {
      protected Connection linkToDataBase;
      protected ResultSet resultSet;
@@ -19,7 +19,7 @@ public abstract class Dao
       * @throws ClassNotFoundException
       * @throws SQLException 
       */
-     public Dao() throws SQLException, ClassNotFoundException
+     public DAO() throws SQLException, ClassNotFoundException
      {
           linkToDataBase = DataBaseConnection.GetConnection();
           
