@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorp_home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.soporte.HomeController">
+<AnchorPane fx:id="anchorp_home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Home">
    <children>
       <Pane fx:id="pan_buscar" layoutX="-4.0" prefHeight="522.0" prefWidth="740.0">
          <children>
@@ -38,17 +38,17 @@
             <TextField fx:id="txt_cliente" layoutX="225.0" layoutY="341.0" prefHeight="32.0" prefWidth="198.0" promptText="Ingresa la cuenta del cliente " />
             <ImageView fx:id="img_dash_board" fitHeight="141.0" fitWidth="218.0" layoutX="248.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../imagen/dashboard.png" />
+                  <Image url="@../images/dashboard.png" />
                </image>
             </ImageView>
             <ImageView fx:id="img_dash" fitHeight="44.0" fitWidth="48.0" layoutX="152.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../imagen/audifonos.png" />
+                  <Image url="@../images/audifonos.png" />
                </image>
             </ImageView>
             <ImageView fx:id="img_soprote" fitHeight="44.0" fitWidth="38.0" layoutX="689.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../imagen/asistente.png" />
+                  <Image url="@../images/asistente.png" />
                </image>
             </ImageView>
          </children>

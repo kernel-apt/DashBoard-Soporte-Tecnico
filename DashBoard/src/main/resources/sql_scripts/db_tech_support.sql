@@ -23,3 +23,4 @@ CREATE TABLE IF NOT EXISTS Users
 );
 
 INSERT INTO Users VALUES ('admin', 'manuel.cruz.sanchez@estudiante.uacm.edu.mx', 'xml123456', CURRENT_TIMESTAMP);
+INSERT INTO Users VALUES ('admin1', 'manuel.cruz@uacm.edu.mx', 'javafx123456', CURRENT_TIMESTAMP);
