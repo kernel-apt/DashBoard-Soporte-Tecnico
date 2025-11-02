@@ -13,8 +13,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>22</maven.compiler.source>
-        <maven.compiler.target>22</maven.compiler.target>
-        <javafx.version>22.0.2</javafx.version>
+        <maven.compiler.target>26-ea</maven.compiler.target>
+        <javafx.version>25-ea+21</javafx.version>
         <mainClassName>dashboard.DashBoard</mainClassName>
     </properties>
 

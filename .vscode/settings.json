@@ -4,5 +4,9 @@
      "umlet.fontBold": "Comic Sans MS",
      "umlet.fontItalic": "Comic Sans MS",
      "umlet.fontNormal": "",
-     "java.debug.settings.onBuildFailureProceed": true
+     "java.debug.settings.onBuildFailureProceed": true,
+     "editor.fontSize": 18,
+     "editor.inlineSuggest.suppressSuggestions": true,
+     "terminal.integrated.suggest.enabled": true,
+     "terminal.integrated.fontSize": 16
 }

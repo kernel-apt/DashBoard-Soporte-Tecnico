@@ -4,6 +4,13 @@
      [
           {
                "type": "java",
+               "name": "Main",
+               "request": "launch",
+               "mainClass": "dashboard/dashboard.Main",
+               "projectName": "dashboard"
+          },
+          {
+               "type": "java",
                "name": "DashBoard",
                "request": "launch",
                "mainClass": "dashboard/dashboard.DashBoard",
