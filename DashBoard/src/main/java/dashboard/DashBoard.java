@@ -4,7 +4,7 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.scene.Scene;  
 import javafx.stage.Stage;
 
 public class DashBoard extends Application
@@ -14,7 +14,7 @@ public class DashBoard extends Application
     @Override
     public void start(Stage stage) throws IOException 
     {
-        scene = new Scene(loadFXML("SignUp"), 500, 450);
+        scene = new Scene(loadFXML("SignUp"), 550, 600);
         stage.setTitle("Iniciar Sesion");
         stage.setResizable(true);
         stage.centerOnScreen();

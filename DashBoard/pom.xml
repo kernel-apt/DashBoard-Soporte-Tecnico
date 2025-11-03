@@ -7,7 +7,7 @@
     <artifactId>dashboard</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-
+    
     <name>dashboard</name>
 
     <properties>
@@ -19,6 +19,12 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.gluonhq.attach</groupId>
+            <artifactId>display</artifactId>
+            <version>4.0.22</version>
+        </dependency>
 
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>

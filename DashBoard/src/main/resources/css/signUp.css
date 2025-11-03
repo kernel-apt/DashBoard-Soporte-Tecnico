@@ -1,0 +1,41 @@
+.pane
+{
+    -fx-font-family: 'Comic Sans MS';
+    -fx-background-color: black;
+    -fx-min-height: 600px;
+    -fx-min-width: 550px;
+}
+
+#title
+{
+    -fx-background-color: rgb(212, 13, 212);
+    -fx-min-height: 100px;
+    -fx-min-width: 550px;
+    -fx-alignment: center;
+    -fx-font-size: 40px;
+}
+
+.label-class
+{
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-font-size: 30px;
+}
+
+.textfield-class
+{
+    -fx-background-color: beige;
+    -fx-border-radius: 15px;
+    -fx-font-size: 25px;
+}
+
+#button
+{
+    -fx-border-color: rgb(230, 9, 230);
+    -fx-background-color: black;
+    -fx-text-alignment: center;
+    -fx-border-radius: 15px;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-font-size: 30px;
+}

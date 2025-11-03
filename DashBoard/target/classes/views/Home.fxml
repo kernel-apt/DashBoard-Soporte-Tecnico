@@ -1,57 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToggleButton?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import com.gluonhq.charm.glisten.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="anchorp_home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Home">
+<Pane id="pane" fx:id="pane" styleClass="pane-class" stylesheets="@../css/home.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
    <children>
-      <Pane fx:id="pan_buscar" layoutX="-4.0" prefHeight="522.0" prefWidth="740.0">
-         <children>
-            <ToggleButton fx:id="togle_mode" layoutX="348.0" layoutY="15.0" mnemonicParsing="false" />
-            <Label fx:id="lbl_nombre_tec" layoutX="399.0" layoutY="5.0" prefHeight="44.0" prefWidth="335.0" style="-fx-background-color: grey;" text="  Manuel Cruz Sanchez  || Soporte Tecnico" textFill="WHITE">
-               <font>
-                  <Font name="Arial Black" size="12.0" />
-               </font>
-            </Label>
-            <Label fx:id="lbl_dark" layoutX="264.0" layoutY="19.0" text="Dark Mode">
-               <font>
-                  <Font name="Arial Black" size="12.0" />
-               </font>
-            </Label>
-            <Label fx:id="lbl_dash" layoutX="67.0" layoutY="19.0" text="Dash Board">
-               <font>
-                  <Font name="Arial Black" size="12.0" />
-               </font>
-            </Label>
-            <Button fx:id="btn_buscar" layoutX="425.0" layoutY="341.0" mnemonicParsing="false" text="Buscar">
-               <font>
-                  <Font name="Arial Black" size="14.0" />
-               </font>
-            </Button>
-            <TextField fx:id="txt_cliente" layoutX="225.0" layoutY="341.0" prefHeight="32.0" prefWidth="198.0" promptText="Ingresa la cuenta del cliente " />
-            <ImageView fx:id="img_dash_board" fitHeight="141.0" fitWidth="218.0" layoutX="248.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/dashboard.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="img_dash" fitHeight="44.0" fitWidth="48.0" layoutX="152.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/audifonos.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="img_soprote" fitHeight="44.0" fitWidth="38.0" layoutX="689.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/asistente.png" />
-               </image>
-            </ImageView>
-         </children>
-      </Pane>
+      <ImageView id="imgView" fx:id="imgViewDash" disable="true" fitHeight="470.0" fitWidth="709.0" layoutX="517.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dashboard.png" />
+         </image>
+      </ImageView>
+      <AppBar fx:id="appBarDash" styleClass="app-bar-class" stylesheets="@../css/home.css" titleText="      DashBoard" />
+      <ImageView id="icon-class" fx:id="imgViewLogo" disable="true" fitHeight="80.0" fitWidth="94.0" layoutX="334.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/audifonos.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblAppBar" layoutX="692.0" layoutY="4.0" prefHeight="70.0" prefWidth="604.0" styleClass="label-class" text="Soporte Tecnico - " textFill="WHITE" />
+      <Avatar fx:id="avatar" layoutX="1516.0" radius="40.0">
+         <image>
+            <Image url="@../images/asistente.png" />
+         </image></Avatar>
+      <Label fx:id="lblSearch" layoutX="674.0" layoutY="661.0" prefHeight="62.0" prefWidth="519.0" styleClass="button-class" text="Ingresa la cuenta de tu cliente" />
+      <Icon content="MENU" layoutY="-5.0" prefHeight="86.0" prefWidth="94.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Icon>
+      <ToggleButton id="toggleBtnSearch" fx:id="toggleBtnSearch" layoutX="535.0" layoutY="664.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="139.0" text="Buscar" />
+      <Hyperlink id="hiperLink" fx:id="hiperLink" layoutX="1298.0" layoutY="14.0" text="Cerrar Sesion" />
    </children>
-</AnchorPane>
+   <effect>
+      <DropShadow />
+   </effect>
+</Pane>

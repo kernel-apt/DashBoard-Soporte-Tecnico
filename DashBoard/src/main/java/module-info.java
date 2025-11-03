@@ -7,7 +7,9 @@ module dashboard
     requires javafx.fxml;
 
     requires org.kordamp.ikonli.materialdesign;
+    requires org.kordamp.bootstrapfx.core;
     requires com.dlsc.workbenchfx.core;
+    requires com.gluonhq.attach.display;
     requires com.gluonhq.charm.glisten;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.ikonli.core;
@@ -25,6 +27,14 @@ module dashboard
 
     opens controllers to 
     
+    com.dlsc.workbenchfx.core,
+    com.gluonhq.attach.display,
+    com.gluonhq.charm.glisten,
+    com.gluonhq.attach.util,
+    mfx.effects,
+    MaterialFX,
+    animatefx,
+    mfx.core,
     javafx.controls, 
     javafx.graphics,
     javafx.media,

@@ -14,7 +14,7 @@ public class DataBaseConnection
       //el objeto properties para almacenar las propiedades de la conexion    
       private static Properties properties = new Properties();
       // el objeto dbConnection almacena la conexion a la base de datos
-      public static Connection dbConnection = null;
+      private static Connection dbConnection = null;
 
       /**
        * Metodo para obtener la conexion a la base de datos

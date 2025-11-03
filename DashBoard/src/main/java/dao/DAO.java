@@ -2,6 +2,7 @@ package dao;
 
 import data_base.DataBaseConnection;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 
@@ -12,6 +13,7 @@ import java.sql.ResultSet;
 public abstract class DAO
 {
      protected Connection linkToDataBase;
+     protected Statement statement;
      protected ResultSet resultSet;
 
      /**

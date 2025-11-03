@@ -1,5 +1,6 @@
 package dao;
 
+import data_base.DataBaseConnection;
 import java.sql.SQLException;
 
 /**
@@ -14,6 +15,21 @@ public class UserDAO extends DAO
     }
 
     // Aquí puedes agregar métodos específicos para 
-    //manejar operaciones relacionadas con los usuarios.
-    
+    //manejar operaciones relacionadas con los usuarios
+    public String validateUser(String email, String password) throws SQLException, ClassNotFoundException
+    {
+        statement = DataBaseConnection.GetConnection().createStatement();
+        resultSet = statement.executeQuery
+        (
+            "SELECT email, password FROM Users WHERE email = " + "'" + 
+            email + "'" + " AND " + "password = " + "'" + password + "'"+ " ); "
+        );
+
+        if (resultSet != null) 
+        {
+            resultSet.next();
+            return resultSet.getString("rol");
+        }
+        return null;
+    }   
 }

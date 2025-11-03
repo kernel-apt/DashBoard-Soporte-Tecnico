@@ -1,26 +1,19 @@
---crea la base de datos si no existe
+-- crea la base de datos si no existe
 CREATE DATABASE IF NOT EXISTS db_tech_support;
 
---usa la base de datos recientemente creada
+-- usa la base de datos recientemente creada
 USE db_tech_support;
 
--- CREATE TABLE IF NOT EXISTS tickets (
---     ticket_id INT AUTO_INCREMENT PRIMARY KEY,
---     user_id INT NOT NULL,
---     issue_description TEXT NOT NULL,
---     status ENUM('open', 'in_progress', 'closed') DEFAULT 'open',
---     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
---     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
--- );
-
-CREATE TABLE IF NOT EXISTS Users 
+CREATE TABLE IF NOT EXISTS Users
 (
-    username VARCHAR(50) NOT NULL UNIQUE,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    PRIMARY KEY (username, email)
-);
+    email VARCHAR(50) NOT NULL UNIQUE,
+    employeeId INT NOT NULL UNIQUE AUTO_INCREMENT,
+    password VARCHAR(30) NOT NULL,
+    rol VARCHAR(14) NOT NULL,
+    PRIMARY KEY (email,employeeId)
 
-INSERT INTO Users VALUES ('admin', 'manuel.cruz.sanchez@estudiante.uacm.edu.mx', 'xml123456', CURRENT_TIMESTAMP);
-INSERT INTO Users VALUES ('admin1', 'manuel.cruz@uacm.edu.mx', 'javafx123456', CURRENT_TIMESTAMP);
+) AUTO_INCREMENT = 15000000;
+
+INSERT INTO Users(email, password, rol) VALUES('admin@estudiante.uacm.edu.mx', 'admin123456', 'administrator');
+INSERT INTO Users(email, password, rol) VALUES('manager@uacm.edu.mx', 'manager123456', 'manager');
+INSERT INTO Users(email, password, rol) VALUES('agent@uacm.edu.mx', 'agent123456', 'agent');
