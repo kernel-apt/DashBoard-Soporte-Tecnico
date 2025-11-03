@@ -4,6 +4,13 @@
      [
           {
                "type": "java",
+               "name": "DashBoard",
+               "request": "launch",
+               "mainClass": "dashboard/dashboard.DashBoard",
+               "projectName": "dashboard"
+          },
+          {
+               "type": "java",
                "name": "Main",
                "request": "launch",
                "mainClass": "dashboard/dashboard.Main",
@@ -13,17 +20,10 @@
                "type": "java",
                "name": "DashBoard",
                "request": "launch",
-               "mainClass": "dashboard/dashboard.DashBoard",
-               "projectName": "dashboard"
-          },
-          {
-               "type": "java",
-               "name": "DashBoard",
-               "request": "launch",
                "mainClass": "dashboard.DashBoard",
                "projectName": "dashboard",
                "cwd": "${workspaceFolder}/DashBoard",
-               "vmArgs": "--module-path ${env:JFX}/lib --add-modules javafx.controls,javafx.fxml,javafx.media,javafx.web"
+               "vmArgs": "--module-path ${env:JFX}/lib --add-modules javafx.controls,javafx.fxml,javafx.media,javafx.web, --enable-native-access=javafx.graphics"
           }
      ]
 }

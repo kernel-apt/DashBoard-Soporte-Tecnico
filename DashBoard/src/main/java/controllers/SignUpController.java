@@ -72,38 +72,38 @@ public class SignUpController implements Initializable
         //     Screen.getPrimary().getVisualBounds().getHeight() 
         // );
 
-        if (!txtUser.getText().equals("") && !txtPasskey.getText().equals("")) 
+        if (txtUser.getText().equals("") || txtPasskey.getText().equals("")) 
         {
-            if (connection != null) 
-            {   
-                passkey = txtPasskey.getText();
-                email = txtUser.getText();
-
-                //usa objeto dao para separar la logica de datos de la de negocio
-                UserDAO userDAO = new UserDAO();
-                String rolName = userDAO.validateUser(email, passkey);
-                
-                if (rolName != null)
-                {
-                    DashBoard.setRoot
-                    (
-                        "Home", 
-                        "Bienvenido ", 
-                        1600.0, 
-                        1200.0
-                    );
-                }
-            }            
+            ShowAlert
+            (
+                "No has ingresado alguno de los campos obligatorio...",
+                "Mensaje Importante!!!",
+                "Atencion!!!",
+                AlertType.ERROR
+            );
             return;
         }
 
-        ShowAlert
-        (
-            "No has ingresado alguno de los campos obligatorio...",
-            "Mensaje Importante!!!",
-            "Atencion!!!",
-            AlertType.ERROR
-        );
+        if (connection != null) 
+        {   
+            passkey = txtPasskey.getText();
+            email = txtUser.getText();
+
+            //usa objeto dao para separar la logica de datos de la de negocio
+            UserDAO userDAO = new UserDAO();
+            String rolName = userDAO.validateUser(email, passkey);
+            
+            if (rolName != null)
+            {
+                DashBoard.setRoot
+                (
+                    "Home", 
+                    "Bienvenido ", 
+                    1600.0, 
+                    1200.0
+                );
+            }
+        }         
     }
     
     private void ShowAlert(String content, String header, String title, AlertType type)
