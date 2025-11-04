@@ -34,9 +34,9 @@ public class DataBaseConnection
                   
                   dbConnection = DriverManager.getConnection
                   (
-                        properties.getProperty("password"),
+                        properties.getProperty("url"),
                         properties.getProperty("user"),
-                        properties.getProperty("url")
+                        properties.getProperty("password")
                   );
             } 
             catch (Exception e)
