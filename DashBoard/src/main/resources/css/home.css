@@ -1,7 +1,7 @@
 #pane
 {
-    -fx-pref-height: 1200px;
-    -fx-pref-width: 1600px;
+    -fx-pref-height: 1100px;
+    -fx-pref-width: 1700px;
     -fx-alignment: center;
     -fx-font-size: 25px;
 }
@@ -13,8 +13,10 @@
 
 .app-bar-class
 {
-    -fx-pref-width: 1600px;
-    -fx-pref-height: 80px;
+    -fx-background-color: rgb(150, 54, 228);
+    -fx-border-radius: 20px;
+    -fx-pref-width: 1700px;
+    -fx-pref-height: 200px;
     -fx-font-size: 40px;
 }
 
@@ -56,5 +58,6 @@
 
 #hiperLink
 {
-    -fx-font-size: 30px;
+    -fx-text-fill: black;
+    -fx-font-size: 25px;
 }

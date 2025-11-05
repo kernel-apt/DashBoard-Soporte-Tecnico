@@ -7,32 +7,28 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane id="pane" fx:id="pane" styleClass="pane-class" stylesheets="@../css/home.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+<Pane id="pane" fx:id="pane" prefHeight="1000.0" prefWidth="1700.0" styleClass="pane-class" stylesheets="@../css/home.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
    <children>
-      <ImageView id="imgView" fx:id="imgViewDash" disable="true" fitHeight="470.0" fitWidth="709.0" layoutX="479.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="imgView" fx:id="imgViewDash" disable="true" fitHeight="470.0" fitWidth="709.0" layoutX="537.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/dashboard.png" />
          </image>
       </ImageView>
-      <AppBar fx:id="appBarDash" styleClass="app-bar-class" stylesheets="@../css/home.css" titleText="      DashBoard" />
-      <ImageView id="icon-class" fx:id="imgViewLogo" disable="true" fitHeight="80.0" fitWidth="94.0" layoutX="334.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+      <AppBar fx:id="appBarDash" styleClass="app-bar-class" stylesheets="@../css/home.css" titleText="" />
+      <ImageView id="icon-class" fx:id="imgViewLogo" disable="true" fitHeight="92.0" fitWidth="86.0" layoutX="6.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/audifonos.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblAppBar" layoutX="692.0" layoutY="4.0" prefHeight="70.0" prefWidth="604.0" styleClass="label-class" text="Soporte Tecnico - " textFill="WHITE" />
-      <Avatar fx:id="avatar" layoutX="1516.0" radius="40.0">
-         <image>
-            <Image url="@../images/asistente.png" />
-         </image></Avatar>
-      <Label fx:id="lblSearch" layoutX="636.0" layoutY="660.0" prefHeight="62.0" prefWidth="519.0" styleClass="button-class" text="Ingresa la cuenta de tu cliente" />
-      <Icon content="MENU" layoutY="-5.0" prefHeight="86.0" prefWidth="94.0">
+      <ToggleButton id="toggleBtnSearch" fx:id="toggleBtnSearch" layoutX="537.0" layoutY="663.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="139.0" text="Buscar" />
+      <Label fx:id="txtSearch" layoutX="676.0" layoutY="660.0" prefHeight="62.0" prefWidth="528.0" styleClass="button-class" text="Ingresa la cuenta de tu cliente" />
+      <Icon content="MENU" layoutX="2.0" layoutY="9.0" prefHeight="72.0" prefWidth="93.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Icon>
-      <ToggleButton id="toggleBtnSearch" fx:id="toggleBtnSearch" layoutX="497.0" layoutY="663.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="139.0" text="Buscar" />
-      <Hyperlink id="hiperLink" fx:id="hiperLink" layoutX="1298.0" layoutY="14.0" text="Cerrar Sesion" />
+      <Label fx:id="lblAppBar" layoutX="92.0" layoutY="6.0" prefHeight="80.0" prefWidth="165.0" styleClass="label-class" text="DashBoard" textFill="WHITE" />
+      <Hyperlink id="hiperLink" fx:id="hiperLink" layoutX="1524.0" layoutY="44.0" onAction="#CloseWindow" text="Cerrar Sesion" />
    </children>
    <effect>
       <DropShadow />

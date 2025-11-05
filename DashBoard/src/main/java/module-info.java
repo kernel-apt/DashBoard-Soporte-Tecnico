@@ -3,43 +3,33 @@ module dashboard
     requires transitive javafx.graphics;
     requires javafx.controls;
     requires javafx.media;
+    requires java.desktop;
     requires javafx.base;
     requires javafx.fxml;
+    requires javafx.web;
 
     requires org.kordamp.ikonli.materialdesign;
-    requires org.kordamp.bootstrapfx.core;
     requires com.dlsc.workbenchfx.core;
     requires com.gluonhq.attach.display;
     requires com.gluonhq.charm.glisten;
     requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.ikonli.core;
-    requires org.controlsfx.controls;
     requires com.gluonhq.attach.util;
-    requires VirtualizedFX;
-    requires mfx.effects;
+    requires org.controlsfx.controls;
+    requires org.kordamp.ikonli.core;
+    requires jdk.jsobject;
     requires MaterialFX;
     requires animatefx;
-    requires mfx.core;
     requires java.sql;
 
     opens dashboard to javafx.fxml;
     exports dashboard;
 
-    opens controllers to 
+    opens data_base to java.sql;
+    exports data_base;
     
-    com.dlsc.workbenchfx.core,
-    com.gluonhq.attach.display,
-    com.gluonhq.charm.glisten,
-    com.gluonhq.attach.util,
-    mfx.effects,
-    MaterialFX,
-    animatefx,
-    mfx.core,
-    javafx.controls, 
-    javafx.graphics,
-    javafx.media,
-    javafx.fxml, 
-    javafx.base;
-
-    exports controllers;
+    opens controllers to 
+    javafx.fxml, javafx.base, javafx.controls, 
+    javafx.media, javafx.web, javafx.graphics;
+    
+    exports controllers; 
 }

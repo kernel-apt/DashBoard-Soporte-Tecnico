@@ -36,6 +36,7 @@ public class DashBoard extends Application
         scene.getWindow().setWidth(width);
         scene.getWindow().setHeight(height);
         scene.getWindow().centerOnScreen();
+        ((Stage) scene.getWindow()).setResizable(false);
         scene.setRoot(loadFXML(fxml));
     }
     
@@ -48,6 +49,8 @@ public class DashBoard extends Application
     public static void setRoot(String fxml, String title) throws IOException 
     {
         ((Stage) scene.getWindow()).setTitle(title);
+        scene.getWindow().centerOnScreen();
+        ((Stage) scene.getWindow()).setResizable(false);
         scene.setRoot(loadFXML(fxml));
     }
     
@@ -58,6 +61,8 @@ public class DashBoard extends Application
      */
     public static void setRoot(String fxml) throws IOException 
     {
+        scene.getWindow().centerOnScreen();
+        ((Stage) scene.getWindow()).setResizable(false);
         scene.setRoot(loadFXML(fxml));
     }
 

@@ -8,10 +8,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.Pane;
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ResourceBundle;
 import dao.UserDAO;
 import dashboard.DashBoard;
@@ -36,27 +33,10 @@ public class SignUpController implements Initializable
 
     @FXML private ToggleButton btnSignIn;
 
-    private Connection connection;
-    private Statement statement;
-    private ResultSet resultSet;
-    private String query;
-
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) 
     {
-        try 
-        {
-            connection = DataBaseConnection.GetConnection();
-        } 
-        catch (SQLException | ClassNotFoundException e) 
-        {
-            ShowAlert
-            (
-                "Error en al establecer conexion con el servidor!!!", 
-                "Se presento un problema interno...", 
-                "Problema detectado", AlertType.ERROR
-            );
-        }
+        
     }
 
     public void SignIn() throws SQLException, ClassNotFoundException, IOException
@@ -73,7 +53,7 @@ public class SignUpController implements Initializable
             return;
         }
 
-        if (connection != null) 
+        if (DataBaseConnection.GetConnection() != null) 
         {   
             String passkey = txtPasskey.getText();
             String email = txtUser.getText();
@@ -88,8 +68,8 @@ public class SignUpController implements Initializable
                 (
                     "Home", 
                     "Bienvenido ", 
-                    1600.0, 
-                    1200.0
+                    1700.0, 
+                    1100.0
                 );
             }
         }         

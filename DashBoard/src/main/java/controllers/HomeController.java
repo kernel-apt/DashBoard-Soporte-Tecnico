@@ -2,6 +2,7 @@ package controllers;
 
 import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.control.Avatar;
+import dashboard.DashBoard;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ToggleButton;
@@ -26,4 +27,15 @@ public class HomeController
     @FXML private ToggleButton toggleBtnSearch;
     
     @FXML private Avatar avatar;
+
+    public void CloseWindow() throws Exception
+    {
+        DashBoard.setRoot
+        (
+            "SignUp", 
+            "Iniciar Sesion", 
+            550, 
+            600
+        );
+    }
 }
