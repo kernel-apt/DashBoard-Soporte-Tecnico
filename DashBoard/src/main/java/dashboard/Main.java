@@ -1,9 +1,6 @@
 package dashboard;
 
-import java.sql.Connection;
-
 import dao.UserDAO;
-import data_base.DataBaseConnection;
 
 public class Main 
 {
@@ -11,10 +8,9 @@ public class Main
     {
         try 
         {
-            Connection connection = DataBaseConnection.GetConnection();
-            // UserDAO userDAO = new UserDAO();
-            // String rolName = userDAO.validateUser("agent@uacm.edu.mx", "agent123456");
-            // System.out.println("\n Usuario actual = " + rolName);
+            UserDAO userDAO = new UserDAO();
+            String rolName = userDAO.validateUser("agent@uacm.edu.mx", "agent123456");
+            System.out.println("Usuario actual = " + rolName);
         } 
         catch (Exception e) 
         {

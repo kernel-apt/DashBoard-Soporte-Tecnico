@@ -36,9 +36,6 @@ public class SignUpController implements Initializable
 
     @FXML private ToggleButton btnSignIn;
 
-    public static String passkey = "";
-    public static String email = "";
-
     private Connection connection;
     private Statement statement;
     private ResultSet resultSet;
@@ -64,14 +61,6 @@ public class SignUpController implements Initializable
 
     public void SignIn() throws SQLException, ClassNotFoundException, IOException
     {
-        // DashBoard.setRoot
-        // (
-        //     "Home", 
-        //     "Bienvenido ", 
-        //     Screen.getPrimary().getVisualBounds().getWidth(), 
-        //     Screen.getPrimary().getVisualBounds().getHeight() 
-        // );
-
         if (txtUser.getText().equals("") || txtPasskey.getText().equals("")) 
         {
             ShowAlert
@@ -86,8 +75,8 @@ public class SignUpController implements Initializable
 
         if (connection != null) 
         {   
-            passkey = txtPasskey.getText();
-            email = txtUser.getText();
+            String passkey = txtPasskey.getText();
+            String email = txtUser.getText();
 
             //usa objeto dao para separar la logica de datos de la de negocio
             UserDAO userDAO = new UserDAO();
