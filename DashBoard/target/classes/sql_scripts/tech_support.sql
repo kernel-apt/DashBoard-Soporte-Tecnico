@@ -1,13 +1,13 @@
 -- crea la base de datos si no existe
-CREATE DATABASE IF NOT EXISTS db_tech_support;
+CREATE DATABASE IF NOT EXISTS tech_support;
 
 -- usa la base de datos recientemente creada
-USE db_tech_support;
+USE tech_support;
 
 CREATE TABLE IF NOT EXISTS Users
 (
     email VARCHAR(50) NOT NULL UNIQUE,
-    employeeId INT NOT NULL UNIQUE AUTO_INCREMENT,
+    employeeId INT NOT NULL UNIQUE AUTO_INCREMENT,  
     password VARCHAR(30) NOT NULL,
     rol VARCHAR(14) NOT NULL,
     PRIMARY KEY (email,employeeId)

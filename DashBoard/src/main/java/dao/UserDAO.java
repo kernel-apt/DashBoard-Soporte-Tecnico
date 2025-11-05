@@ -14,13 +14,15 @@ public class UserDAO extends DAO
         super();
     }
 
+    // Aquí puedes agregar métodos específicos para 
+    //manejar operaciones relacionadas con los usuarios
     public String validateUser(String email, String password) throws SQLException, ClassNotFoundException
     {
         statement = DataBaseConnection.GetConnection().createStatement();
         resultSet = statement.executeQuery
         (
-            "SELECT * FROM Users WHERE email = " + "'" + 
-            email + "'" + " AND " + "password = " + "'" + password + "';"
+            "SELECT * FROM Users WHERE email = " + " ' " + email
+            + " ' " + "AND" + " password = " + " ' " + password + " ';"
         );
 
         if (resultSet != null) 

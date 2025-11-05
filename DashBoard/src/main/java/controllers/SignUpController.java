@@ -6,8 +6,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.Pane;
-import javafx.stage.Screen;
-
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -66,6 +64,14 @@ public class SignUpController implements Initializable
 
     public void SignIn() throws SQLException, ClassNotFoundException, IOException
     {
+        // DashBoard.setRoot
+        // (
+        //     "Home", 
+        //     "Bienvenido ", 
+        //     Screen.getPrimary().getVisualBounds().getWidth(), 
+        //     Screen.getPrimary().getVisualBounds().getHeight() 
+        // );
+
         if (txtUser.getText().equals("") || txtPasskey.getText().equals("")) 
         {
             ShowAlert
@@ -93,8 +99,8 @@ public class SignUpController implements Initializable
                 (
                     "Home", 
                     "Bienvenido ", 
-                    Screen.getPrimary().getVisualBounds().getWidth(), 
-                    Screen.getPrimary().getVisualBounds().getHeight() 
+                    1600.0, 
+                    1200.0
                 );
             }
         }         
