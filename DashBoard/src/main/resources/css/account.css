@@ -13,7 +13,7 @@
 
 .app-bar-class
 {
-    -fx-background-color: rgb(150, 54, 228);
+    -fx-background-color: rgb(151, 79, 218);
     -fx-pref-width: 1700px;
     -fx-font-size: 30px;
 }
@@ -47,20 +47,21 @@
 
 .label-class
 {
-    -fx-border-radius: 15px;
+    -fx-background-color: rgb(200, 188, 211);
+    -fx-background-radius: 20px;
+    -fx-pref-height: 20px;
     -fx-text-fill: black;
     -fx-alignment: center;
-    -fx-font-size: 30px;
+    -fx-font-size: 19px;
 }
 
 #toggleBtnSearch
 {
-
+    
     -fx-background-color: rgb(151, 79, 218);
     -fx-background-radius: 20px;
-    -fx-border-radius: 15px;
+    -fx-font-size: 18px;
     -fx-alignment: center;
-    -fx-font-size: 30px;
 }
 
 #hiperLink
@@ -76,6 +77,23 @@
 
 #label
 {
-    -fx-background-color: rgb(150, 54, 228);
+    -fx-background-color: rgb(154, 55, 236);
     -fx-font-size: 30px;
+}
+
+.ticket-class
+{
+    -fx-background-color: rgb(21, 1, 30);
+    -fx-font-size: 18px;
+}
+
+.menu-item-class
+{
+    -fx-background-radius: 50px;
+
+}
+
+.label-item-class
+{
+    -fx-text-fill: white;
 }

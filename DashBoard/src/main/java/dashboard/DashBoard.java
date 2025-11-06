@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 
 public class DashBoard extends Application
 {
+    public static Boolean dark = false;
     private static Scene scene;
 
     @Override
@@ -16,7 +17,7 @@ public class DashBoard extends Application
     {
         scene = new Scene(loadFXML("SignUp"), 550, 600);
         stage.setTitle("Iniciar Sesion");
-        stage.setResizable(true);
+        stage.setResizable(false);
         stage.centerOnScreen();
         stage.setScene(scene);
         stage.show();

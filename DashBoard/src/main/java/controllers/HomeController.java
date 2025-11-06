@@ -1,9 +1,10 @@
 package controllers;
 
+import java.io.IOException;
 import com.gluonhq.charm.glisten.control.AppBar;
-import com.gluonhq.charm.glisten.control.Avatar;
 import dashboard.DashBoard;
 import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.image.ImageView;
@@ -25,10 +26,9 @@ public class HomeController
     @FXML private Label lblSearch;
  
     @FXML private ToggleButton toggleBtnSearch;
+    @FXML private Hyperlink hyperLink;
     
-    @FXML private Avatar avatar;
-
-    public void CloseWindow() throws Exception
+    public void CloseWindow() throws IOException
     {
         DashBoard.setRoot
         (
@@ -36,6 +36,17 @@ public class HomeController
             "Iniciar Sesion", 
             550, 
             600
+        );
+    }
+
+    public void SearchForAccount() throws IOException
+    {
+        DashBoard.setRoot
+        (
+            "AccountDetail", 
+            "Detalles del Cliente", 
+            1700, 
+            1030
         );
     }
 }

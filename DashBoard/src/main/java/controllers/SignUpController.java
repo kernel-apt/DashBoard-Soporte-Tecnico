@@ -69,7 +69,7 @@ public class SignUpController implements Initializable
                     "Home", 
                     "Bienvenido ", 
                     1700.0, 
-                    1100.0
+                    1030.0
                 );
             }
         }         

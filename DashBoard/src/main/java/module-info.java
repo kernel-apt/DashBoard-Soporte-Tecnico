@@ -3,7 +3,6 @@ module dashboard
     requires transitive javafx.graphics;
     requires javafx.controls;
     requires javafx.media;
-    requires java.desktop;
     requires javafx.base;
     requires javafx.fxml;
     requires javafx.web;
@@ -28,8 +27,14 @@ module dashboard
     exports data_base;
     
     opens controllers to 
-    javafx.fxml, javafx.base, javafx.controls, 
-    javafx.media, javafx.web, javafx.graphics;
+    org.kordamp.ikonli.fontawesome5, org.kordamp.ikonli.fontawesome6,
+    org.kordamp.ikonli.paymentfont, org.kordamp.ikonli.fontawesome,
+    org.kordamp.ikonli.core, org.kordamp.ikonli.materialdesign,
+    org.controlsfx.controls, org.kordamp.bootstrapfx.core,
+    org.kordamp.ikonli.javafx, com.dlsc.workbenchfx.core,
+    com.gluonhq.charm.glisten, com.gluonhq.attach.display,
+    javafx.graphics, javafx.fxml, javafx.base, javafx.controls,
+    animatefx, MaterialFX, javafx.media, javafx.web; 
     
     exports controllers; 
 }

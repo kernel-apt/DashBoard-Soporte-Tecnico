@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.*?>
+
+<Pane id="pane" fx:id="pane" prefHeight="1000.0" prefWidth="1700.0" scaleShape="false" styleClass="pane-class" stylesheets="@../css/account.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccountDetailController">
+   <children>
+      <AppBar fx:id="appBarDash" maxHeight="130.0" minHeight="73.0" prefHeight="73.0" spacing="-1.0" styleClass="app-bar-class" stylesheets="@../css/home.css" titleText="">
+         <effect>
+            <DropShadow />
+         </effect></AppBar>
+      <Hyperlink id="hiperLink" fx:id="hiperLink" layoutX="1461.0" layoutY="30.0" onAction="#CloseWindow" text="Cerrar Sesion" />
+      <ToggleButtonGroup layoutX="23.0" layoutY="17.0" selectionType="SINGLE">
+         <toggles>
+            <ToggleButton id="toggleBtnSearch" mnemonicParsing="false" prefHeight="56.0" prefWidth="410.0" text="DashBoard-Soporte Tecnico">
+               <graphic>
+                  <ImageView id="icon-class" fx:id="imgViewLogo" disable="true" fitHeight="48.0" fitWidth="83.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/audifonos.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </toggles>
+      </ToggleButtonGroup>
+      <ToggleSwitch fx:id="toggleDarkMode" layoutX="1486.0" layoutY="2.0" text="dark mode" />
+      <ImageView fx:id="imgViewRegistry" fitHeight="56.0" fitWidth="60.0" layoutX="-4.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../iconos/registry.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearch" layoutX="643.0" layoutY="21.0" prefHeight="76.0" prefWidth="479.0" promptText="     Ingresa la cuenta de tu cliente" styleClass="label-class" />
+      <ToggleButton id="toggleBtnSearch" fx:id="toggleBtnSearch" layoutX="991.0" layoutY="21.0" mnemonicParsing="false" onAction="#SearchForAccount" prefHeight="42.0" prefWidth="132.0" text="Buscar" />
+      <Pane fx:id="paneTicket" layoutX="43.0" layoutY="269.0" prefHeight="616.0" prefWidth="430.0" styleClass="ticket-class">
+         <children>
+            <Label fx:id="lblArea" layoutX="12.0" layoutY="56.0" prefHeight="36.0" prefWidth="76.0" styleClass="label-item-class" text="Area" />
+            <SplitMenuButton fx:id="spMenuAreas" layoutX="98.0" layoutY="49.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="324.0" styleClass="menu-item-class" text="Soporte Tecnico">
+              <items>
+                <MenuItem fx:id="menuItemTechSupport" mnemonicParsing="false" styleClass="menu-item-class" text="Action 1" />
+                <MenuItem fx:id="menuItemCustomerService" mnemonicParsing="false" styleClass="menu-item-class" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Label fx:id="lblService" layoutX="11.0" layoutY="119.0" prefHeight="36.0" prefWidth="76.0" styleClass="label-item-class" text="Servicio" />
+            <SplitMenuButton fx:id="spMenuServices" layoutX="98.0" layoutY="108.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="324.0" styleClass="menu-item-class" text="Internet">
+               <items>
+                  <MenuItem mnemonicParsing="false" styleClass="menu-item-class" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" styleClass="menu-item-class" text="Action 2" />
+               </items>
+            </SplitMenuButton>
+            <Label fx:id="lblIssue" layoutX="10.0" layoutY="179.0" prefHeight="36.0" prefWidth="76.0" styleClass="label-item-class" text="Falla" />
+            <SplitMenuButton fx:id="spMenuIssues" layoutX="98.0" layoutY="168.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="324.0" styleClass="menu-item-class" text="Internet no navega">
+               <items>
+                  <MenuItem mnemonicParsing="false" styleClass="menu-item-class" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" styleClass="menu-item-class" text="Action 2" />
+               </items>
+            </SplitMenuButton>
+            <Label fx:id="lblSolution" layoutX="10.0" layoutY="240.0" prefHeight="36.0" prefWidth="76.0" styleClass="label-item-class" text="Solucion" />
+            <SplitMenuButton fx:id="spMenuSolutions" layoutX="98.0" layoutY="228.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="324.0" styleClass="menu-item-class" text="Solucion en linea">
+               <items>
+                  <MenuItem mnemonicParsing="false" styleClass="menu-item-class" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" styleClass="menu-item-class" text="Action 2" />
+               </items>
+            </SplitMenuButton>
+            <MFXButton id="toggleBtnSearch" fx:id="btnRegister" layoutX="146.0" layoutY="574.0" prefHeight="36.0" prefWidth="139.0" rippleAnimateShadow="true" text="Registrar" underline="true" />
+            <TextField fx:id="txtSearch1" disable="true" layoutY="1.0" prefHeight="45.0" prefWidth="308.0" promptText="    Detalles de Ticket" styleClass="label-class" />
+            <TextArea layoutX="4.0" layoutY="283.0" prefHeight="85.0" prefWidth="423.0" />
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</Pane>

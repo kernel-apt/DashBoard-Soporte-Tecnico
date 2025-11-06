@@ -14,10 +14,8 @@
 .app-bar-class
 {
     -fx-background-color: rgb(150, 54, 228);
-    -fx-border-radius: 20px;
     -fx-pref-width: 1700px;
-    -fx-pref-height: 200px;
-    -fx-font-size: 40px;
+    -fx-font-size: 30px;
 }
 
 .icon-class
@@ -32,12 +30,19 @@
     -fx-border-width: 60px;
 }
 
+.textfield-class
+{
+    -fx-background-color: rgb(150, 123, 226);
+    /* -fx-background-radius: 20px; */
+    -fx-font-size: 20px;
+}
+
 .button-class
 {
-    -fx-background-color: grey;
-    -fx-border-radius: 15px;
-    -fx-alignment: center;
-    -fx-font-size: 30px;
+    -fx-background-color: rgb(150, 123, 226);
+    -fx-background-radius: 20px;
+    -fx-pref-height: 50px;
+    -fx-font-size: 10px;
 }
 
 .label-class
@@ -50,7 +55,9 @@
 
 #toggleBtnSearch
 {
-    -fx-background-color: white;
+
+    -fx-background-color: rgb(151, 79, 218);
+    -fx-background-radius: 20px;
     -fx-border-radius: 15px;
     -fx-alignment: center;
     -fx-font-size: 30px;
@@ -60,4 +67,15 @@
 {
     -fx-text-fill: black;
     -fx-font-size: 25px;
+}
+
+#imgView
+{
+    -fx-background-radius: 20px;
+}
+
+#label
+{
+    -fx-background-color: rgb(150, 54, 228);
+    -fx-font-size: 30px;
 }
