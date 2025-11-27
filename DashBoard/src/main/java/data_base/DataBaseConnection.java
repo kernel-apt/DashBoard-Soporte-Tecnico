@@ -25,8 +25,8 @@ public class DataBaseConnection
       public static Connection GetConnection() throws ClassNotFoundException, SQLException
       {
             properties.setProperty("url", "jdbc:mysql://localhost:3306/tech_support");
-            properties.setProperty("password", "dash123456");
-            properties.setProperty("user", "dashboard");
+            properties.setProperty("password", "123456");
+            properties.setProperty("user", "root");
 
             try
             {     
