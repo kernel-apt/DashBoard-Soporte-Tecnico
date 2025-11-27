@@ -1,4 +1,4 @@
-package data_base;
+package dao;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;

@@ -10,9 +10,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+
+import dao.DataBaseConnection;
 import dao.UserDAO;
 import dashboard.DashBoard;
-import data_base.DataBaseConnection;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 

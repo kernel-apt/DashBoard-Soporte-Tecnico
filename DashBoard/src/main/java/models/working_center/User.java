@@ -1,7 +1,9 @@
-package models;
+package models.working_center;
 
 public class User 
 {
+    private String employeeNumber;
+    private String dateCreated;
     private String userName;
     private String password;
     private String area;
@@ -57,6 +59,36 @@ public class User
     public void setArea(String area) 
     {
         this.area = area;
+    }
+
+    public String getEmployeeNumber() 
+    {
+        return this.employeeNumber;
+    }
+
+    public void setEmployeeNumber(String employeeNumber) 
+    {
+        this.employeeNumber = employeeNumber;
+    }
+
+    public String getDateCreated() 
+    {
+        return this.dateCreated;
+    }
+
+    public void setDateCreated(String dateCreated) 
+    {
+        this.dateCreated = dateCreated;
+    }
+
+    public String getUserName() 
+    {
+        return this.userName;
+    }
+
+    public void setUserName(String userName) 
+    {
+        this.userName = userName;
     }
 
     /**
