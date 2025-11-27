@@ -5,10 +5,10 @@ public class ONT extends NetWorkDevice
     private double opticalPower;
     private String public_ip;
 
-    public ONT(String passKey, String userName, String ssid4GName, String ssid5GName, String passKey4G, String passKey5G, String ipDefault, double opticalPower, String public_ip) 
+    public ONT(String ssid4GName, String ssid5GName, String passKey4G, String passKey5G) 
     {
-        super(passKey, userName, ssid4GName, ssid5GName, passKey4G, passKey5G, ipDefault);
-        this.opticalPower = opticalPower;
-        this.public_ip = public_ip;
+        super(ssid4GName, ssid5GName, passKey4G, passKey5G);
+        this.opticalPower = -27;
+        this.public_ip = "187.192.485.145";
     }
 }

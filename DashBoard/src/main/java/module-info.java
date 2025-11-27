@@ -23,8 +23,8 @@ module dashboard
     opens dashboard to javafx.fxml;
     exports dashboard;
 
-    opens data_base to java.sql;
-    exports data_base;
+    opens dao to java.sql;
+    exports dao;
     
     opens controllers to 
     org.kordamp.ikonli.fontawesome5, org.kordamp.ikonli.fontawesome6,

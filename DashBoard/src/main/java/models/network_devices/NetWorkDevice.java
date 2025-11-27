@@ -10,39 +10,40 @@ public class NetWorkDevice implements IDeviceOperations
     protected String passKey5G;
     protected String ipDefault;
 
-    public NetWorkDevice(String passKey, String userName, String ssid4GName, String ssid5GName, String passKey4G, String passKey5G, String ipDefault) 
+    public NetWorkDevice(String ssid4GName, String ssid5GName, String passKey4G, String passKey5G) 
     {
-        this.passKey = passKey;
-        this.userName = userName;
+        this.passKey = "admin";
+        this.userName = "root";
         this.ssid4GName = ssid4GName;
         this.ssid5GName = ssid5GName;
         this.passKey4G = passKey4G;
         this.passKey5G = passKey5G;
-        this.ipDefault = ipDefault;
+        this.ipDefault = "192.168.1.254";
     }
 
     @Override
     public void change4GPasskey(String passkey) 
     {
-        
+        this.passKey4G = passkey;
     }
-
+    
     @Override
     public void change5GPasskey(String passkey) 
     {
-    
+        this.passKey5G = passkey;
     }
-
+    
     @Override
     public void restoreCredentials() 
     {
-        
+        this.passKey = "admin";
+        this.userName = "root";
     }
-
+    
     @Override
     public void shutDown4GWLAN() 
     {
-        
+           
     }
 
     @Override

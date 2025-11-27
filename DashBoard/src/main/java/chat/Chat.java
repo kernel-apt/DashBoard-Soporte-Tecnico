@@ -26,67 +26,83 @@ public class Chat
         this.phoneNumber = phoneNumber;
     }
 
-    public String getChatID() {
+    public String getChatID() 
+    {
         return this.chatID;
     }
 
-    public void setChatID(String chatID) {
+    public void setChatID(String chatID) 
+    {
         this.chatID = chatID;
     }
 
-    public List<String> getMessages() {
+    public List<String> getMessages()
+    {
         return this.messages;
     }
 
-    public void setMessages(List<String> messages) {
+    public void setMessages(List<String> messages) 
+    {
         this.messages = messages;
     }
 
-    public LocalDate getStartOfChat() {
+    public LocalDate getStartOfChat() 
+    {
         return this.startOfChat;
     }
 
-    public void setStartOfChat(LocalDate startOfChat) {
+    public void setStartOfChat(LocalDate startOfChat) 
+    {
         this.startOfChat = startOfChat;
     }
 
-    public LocalDate getEndOfChat() {
+    public LocalDate getEndOfChat() 
+    {
         return this.endOfChat;
     }
 
-    public void setEndOfChat(LocalDate endOfChat) {
+    public void setEndOfChat(LocalDate endOfChat) 
+    {
         this.endOfChat = endOfChat;
     }
 
-    public String getSender() {
+    public String getSender() 
+    {
         return this.sender;
     }
 
-    public void setSender(String sender) {
+    public void setSender(String sender) 
+    {
         this.sender = sender;
     }
 
-    public String getReceiver() {
+    public String getReceiver() 
+    {
         return this.receiver;
     }
 
-    public void setReceiver(String receiver) {
+    public void setReceiver(String receiver) 
+    {
         this.receiver = receiver;
     }
 
-    public String getChannel() {
+    public String getChannel() 
+    {
         return this.channel;
     }
 
-    public void setChannel(String channel) {
+    public void setChannel(String channel) 
+    {
         this.channel = channel;
     }
 
-    public String getPhoneNumber() {
+    public String getPhoneNumber() 
+    {
         return this.phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) 
+    {
         this.phoneNumber = phoneNumber;
     }
 }

@@ -6,8 +6,11 @@ package models.network_devices;
  */
 public class WiFiExtender extends NetWorkDevice
 {
-    public WiFiExtender(String passKey, String userName, String ssid4GName, String ssid5GName, String passKey4G, String passKey5G, String ipDefault) 
+    public WiFiExtender(String ssid4GName, String ssid5GName, String passKey4G, String passKey5G) 
     {
-        super(passKey, userName, ssid4GName, ssid5GName, passKey4G, passKey5G, ipDefault);
+        super(ssid4GName, ssid5GName, passKey4G, passKey5G);
+        this.ipDefault = "192.168.1.255";
+        this.userName = "extender";
+        this.passKey = "extender123456";
     }
 }

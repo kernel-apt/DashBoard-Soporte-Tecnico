@@ -17,3 +17,14 @@ CREATE TABLE IF NOT EXISTS Users
 INSERT INTO Users(email, password, rol) VALUES('admin@estudiante.uacm.edu.mx', 'admin123456', 'administrator');
 INSERT INTO Users(email, password, rol) VALUES('manager@uacm.edu.mx', 'manager123456', 'manager');
 INSERT INTO Users(email, password, rol) VALUES('agent@uacm.edu.mx', 'agent123456', 'agent');
+
+CREATE TABLE IF NOT EXISTS Account
+(
+
+);
+
+CREATE TABLE IF NOT EXISTS Ip
+(
+    ip VARCHAR(15), 
+    PRIMARY KEY(ip)  
+);
