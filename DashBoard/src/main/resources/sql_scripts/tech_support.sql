@@ -20,6 +20,11 @@ INSERT INTO Users(email, password, rol) VALUES('agent@uacm.edu.mx', 'agent123456
 
 CREATE TABLE IF NOT EXISTS Account
 (
+    
+);
+
+CREATE TABLE IF NOT EXISTS Employee
+(
 
 );
 
