@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.*?>
-<?import io.github.palexdev.materialfx.controls.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import org.controlsfx.control.*?>
+<?import com.gluonhq.charm.glisten.control.AppBar?>
+<?import com.gluonhq.charm.glisten.control.TextArea?>
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import org.controlsfx.control.ToggleSwitch?>
 
 <Pane id="pane" fx:id="pane" prefHeight="1000.0" prefWidth="1700.0" scaleShape="false" styleClass="pane-class" stylesheets="@../css/account.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccountDetailController">
    <children>
@@ -17,7 +25,7 @@
       <Hyperlink id="hiperLink" fx:id="hiperLink" layoutX="1461.0" layoutY="30.0" onAction="#CloseWindow" text="Cerrar Sesion" />
       <ToggleButtonGroup layoutX="23.0" layoutY="17.0" selectionType="SINGLE">
          <toggles>
-            <ToggleButton id="toggleBtnSearch" mnemonicParsing="false" prefHeight="56.0" prefWidth="410.0" text="DashBoard-Soporte Tecnico">
+            <ToggleButton id="toggleBtnSearch" mnemonicParsing="false" prefHeight="52.0" prefWidth="410.0" text="DashBoard-Soporte Tecnico">
                <graphic>
                   <ImageView id="icon-class" fx:id="imgViewLogo" disable="true" fitHeight="48.0" fitWidth="83.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -29,7 +37,7 @@
          </toggles>
       </ToggleButtonGroup>
       <ToggleSwitch fx:id="toggleDarkMode" layoutX="1486.0" layoutY="2.0" text="dark mode" />
-      <ImageView fx:id="imgViewRegistry" fitHeight="56.0" fitWidth="60.0" layoutX="-4.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgViewRegistry" fitHeight="56.0" fitWidth="60.0" layoutX="-4.0" layoutY="268.0" onMouseClicked="#HideWindow" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../iconos/registry.png" />
          </image>

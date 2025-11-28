@@ -27,6 +27,7 @@ public class AccountDetailController implements Initializable
     @FXML private AppBar appBarDash;
  
     @FXML private Label lblAppBar;
+    
     @FXML private TextField txtSearch;
  
     @FXML private ToggleButton toggleBtnSearch;
@@ -79,6 +80,8 @@ public class AccountDetailController implements Initializable
                 }
             }
         );
+
+        imgViewRegistry.setOnMouseClicked(e -> {paneTicket.setVisible(false);});
     }
 
     public void CloseWindow() throws IOException
@@ -101,5 +104,10 @@ public class AccountDetailController implements Initializable
             1700, 
             1030
         );
+    }
+
+    public void HideWindow()
+    {
+
     }
 }
